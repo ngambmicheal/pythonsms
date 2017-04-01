@@ -1,0 +1,10 @@
+flask
+Flask
+Flask-WTF
+uwsgi
+Werkzeug
+Jinja2
+pymongo
+gunicorn
+wsgiref
+MarkupSafe
