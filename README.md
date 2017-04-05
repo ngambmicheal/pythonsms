@@ -1,4 +1,4 @@
-# Flask Starter [![Build Status](https://travis-ci.org/j4fpw/flask-starter.svg?branch=master)](https://travis-ci.org/j4fpw/flask-starter)
+# Flask Starter [![Build Status](https://travis-ci.org/j4fpw/flask-starter.svg?branch=master)](https://travis-ci.org/j4fpw/flask-starter) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/j4fpw/flask-starter/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/j4fpw/flask-starter/?branch=master)
 Flask Starter Pack
 
 # How to start?
