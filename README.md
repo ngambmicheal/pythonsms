@@ -1,10 +1,10 @@
-# Flask Starter [![Build Status](https://travis-ci.org/enotcode/flask-starter.svg?branch=master)](https://travis-ci.org/enotcode/flask-starter) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/j4fpw/flask-starter/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/j4fpw/flask-starter/?branch=master)
+# Flask Starter [![Build Status](https://travis-ci.org/enotcode/flask-starter.svg?branch=master)](https://travis-ci.org/enotcode/flask-starter)
 Flask Starter Pack
 
 # How to start?
 
 ```
-git clone https://github.com/j4f-pw/flask-starter.git
+https://github.com/enotcode/flask-starter.git
 cd flask-starter
 pip install -r requirements.txt
 python run.py
