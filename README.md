@@ -4,7 +4,7 @@ Flask Starter Pack
 # How to start?
 
 ```
-https://github.com/enotcode/flask-starter.git
+git clone https://github.com/enotcode/flask-starter.git
 cd flask-starter
 pip install -r requirements.txt
 python run.py
