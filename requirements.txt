@@ -3,7 +3,13 @@ Flask-WTF
 uwsgi
 Werkzeug
 Jinja2
-pymongo
 gunicorn
 wsgiref
 MarkupSafe
+flask-sqlalchemy
+mysql-python
+flask-login
+flask-migrate
+Flask-WTF
+flask-bootstrap
+
