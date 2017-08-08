@@ -1,0 +1,13 @@
+- setup your virtualenv
+
+- pip install -r requirements.txt
+
+- setup database path in instance/config.py
+
+- flask db upgrade
+
+- export FLASK_APP=run.py
+
+- export FLASK_CONFIG=development
+
+- flask run

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Classes Module - Scholar SMS{% endblock %}
+{% block body %}
+<div class="title-block">
+    <h3 class="title"> 
+    	All Classes 
+    	<a href="{{url_for('classes.create')}}" class="pull-right btn btn-success btn-flat">
+    		<i class="fa fa-plus"></i>
+    	</a>
+    </h3>
+</div>
+<section class="section">
+    <div class="row sameheight-container">
+        <div class="col-md-12">
+            <div class="card card-block sameheight-item">
+                <div class="table-flip-scroll">
+	                <table class="table table-striped table-bordered table-hover flip-content">
+	                    <thead class="flip-header">
+	                        <tr>
+	                            <th>#</th>
+	                            <th>Name</th>
+	                            <th>Details</th>
+	                            <th colspan="3" style="text-align: center">Actions</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                    	{% for class in classes%}
+	                        <tr class="odd gradeX">
+	                            <td>{{class.id}}</td>
+	                            <td>{{class.name}}</td>
+	                            <td>{{class.description[:100]}}</td>
+	                            <td class="center">
+	                            	<a href="{{url_for('classes.edit', class_id=class.id)}}" class="btn btn-flat btn-primary"> 
+	                            		<i class="fa fa-edit"></i> Edit
+	                            	</a>
+	                            </td>
+	                            <td class="center">
+	                            	<a href="{{url_for('classes.show', class_id=class.id)}}" class="btn btn-flat btn-warning"> 
+	                            		<i class="fa fa-eye"></i> Show
+	                            	</a>
+	                            </td>
+	                            <td class="center">
+	                            	<a href="{{url_for('classes.delete', class_id=class.id)}}" class="btn btn-flat btn-danger"> 
+	                            		<i class="fa fa-remove"></i> Delete
+	                            	</a>
+	                            </td>
+	                        </tr>
+	                        {% endfor %}
+	                    </tbody>
+	                </table>
+	            </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

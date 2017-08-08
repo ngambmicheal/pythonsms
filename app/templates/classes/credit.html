@@ -1,0 +1,17 @@
+{% import "bootstrap/wtf.html" as wtf %}
+{% extends "base.html" %}
+{% block title %}Classes Module - Scholar SMS{% endblock %}
+{% block body %}
+<div class="title-block">
+    <h3 class="title"> {% if create %} Create New Class {% else %} Edit Existing Class {% endif %}</h3>
+</div>
+<section class="section">
+    <div class="row sameheight-container">
+        <div class="col-md-8">
+            <div class="card card-block sameheight-item">
+                {{ wtf.quick_form(form) }}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

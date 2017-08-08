@@ -1,0 +1,27 @@
+{% extends "out.html" %}
+{% block content %}
+<div class="auth">
+    <div class="auth-container">
+        <div class="card">
+            <header class="auth-header">
+                <h1 class="auth-title">
+                    <div class="logo"> <span class="l l1"></span> <span class="l l2"></span> <span class="l l3"></span> <span class="l l4"></span> <span class="l l5"></span> </div> {% block authHeader %}  {% endblock %} </h1>
+            </header>
+            <div class="auth-content">
+                {% block authContent %} {% endblock %}
+            </div>
+        </div>
+        <div class="text-xs-center"> <a href="{{url_for('home.homepage')}}" class="btn btn-secondary rounded btn-sm">
+<i class="fa fa-arrow-left"></i> Back to Home
+</a> </div>
+    </div>
+</div>
+<!-- Reference block for JS -->
+<div class="ref" id="ref">
+    <div class="color-primary"></div>
+    <div class="chart">
+        <div class="color-primary"></div>
+        <div class="color-secondary"></div>
+    </div>
+</div>
+{% endblock %}
